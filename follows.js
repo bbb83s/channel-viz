@@ -17,8 +17,8 @@
 		applicationName	= 'MaDomotique', // Replaces Xively logo in the header
 		dataDuration	= '2days', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 300, // Default interval for data to be displayed (in seconds)
-		dataColor		= '0A1922', // CSS HEX value of color to represent data (omit leading #)
-		hideForm		= 0; // To hide input form use value of 1, otherwise set to 0
+		dataColor	= '0A1922', // CSS HEX value of color to represent data (omit leading #)
+		hideForm	= 0; // To hide input form use value of 1, otherwise set to 0
 
 // Function Declarations
 
@@ -84,7 +84,8 @@
 					updated = updated.parseISO(datastream.at);
 					var diff = null;
 					if(duration == '6hours') diff = 21600000;
-					 if(duration == '1day') diff = 86400000;
+					 if(duration == '1day') diff =  86400000;
+					 if(duration == '2days') diff = 172800000;
 					 if(duration == '1week') diff = 604800000;
 					 if(duration == '1month') diff = 2628000000;
 					 if(duration == '90days') diff = 7884000000;
