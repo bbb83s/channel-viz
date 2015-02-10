@@ -85,7 +85,7 @@
 					var diff = null;
 					if(duration == '6hours') diff = 21600000;
 					 if(duration == '1day') diff =  86400000;
-					 if(duration == '2days') diff = 172800000;
+					 //if(duration == '2days') diff = 172800000;
 					 if(duration == '1week') diff = 604800000;
 					 if(duration == '1month') diff = 2628000000;
 					 if(duration == '90days') diff = 7884000000;
